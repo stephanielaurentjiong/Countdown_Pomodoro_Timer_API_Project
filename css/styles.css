@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: "Anek Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.2rem;
+}
+
+header {
+    text-align: center;
+    margin: 10em auto 1em;
+}
+
+header > h1 {
+    margin-bottom: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    margin-top: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.time-display {
+    font-size: 6rem;
+    font-weight: 500;
+    margin: 0.5em auto 0.5em;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 8em;
+}
+
+.btn {
+    margin: 0 auto;
+    background-color: white;
+    font-size: 1.1rem;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    color: black;
+    box-shadow: -6px -6px 10px #f9f9f9, 6px 6px 10px #00000026;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px #f9f9f9, -2px -2px 2px #00000026;
+}
