@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Anek Gurmukhi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.2rem;
+}
+
+/* Navigation bar */
+header {
+    position: sticky; /* Makes the header stick to the top */
+    top: 0; /* Specifies the top offset */
+    z-index: 1000; /* Navbar above any item */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between; /* Use space-between to distribute items */
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: black;
+}
+
+@media(max-width: 3000px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 20%;
+        text-align: center;
+        transition: 0.3s;
+        padding-left: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* Main body content*/
+h1 {
+    margin: 2em auto 1em;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.title, .quotes {
+    text-align: center;
+}
+
+.title h2 {
+    margin-top: 0;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.time-display {
+    font-size: 9rem;
+    font-weight: 500;
+    margin: 0.5em auto 0.1em;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 3em auto;
+}
+
+/* quotes styling */
+
+
+.button-container-quote{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+    margin: 3em auto;
+}
+
+.btn {
+    margin: 0 auto;
+    background-color: black;
+    font-size: 1.1rem;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    box-shadow: -6px -6px 10px #f9f9f9, 6px 6px 10px #00000026;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 2px #f9f9f9, -2px -2px 2px #00000026;
+}
+
+.quotes {
+    font-size: 1.5rem;
+    margin: 13em auto;  
+    max-width: 80%; 
+}
+
+
+
+@media (max-width: 1259px) {
+    .button-container {
+        margin: 0 13em;
+    }
+
+    .btn {
+        width: 120px; 
+        height: 45px; 
+        font-size: 1rem;  
+    }
+}
+
+@media (max-width: 915px) {
+    .button-container {
+        grid-template-columns: 1fr; 
+        margin: 0 2em; 
+    }
+
+    .btn {
+        width: 100px; 
+        height: 40px; 
+        font-size: 0.9rem; 
+        margin: 0.5em auto;
+    } 
+} 
+
+
+/* Weather styling */
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    width: 90%;
+    max-width: 28em;
+    margin: 0 auto;
+  }
+  
+  .weather-container {
+    width: 100%;
+    background-color: white;
+    padding: 3em 1.8em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .search-container {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #city {
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 18em;
+    margin-right: 2em;
+  }
+
+  #result {
+    color: black;
+  }
+  
+  #result img {
+    width: 30%; 
+    margin-bottom: 1em;
+  }
+  
+  #result h1 {
+    font-size: 4em;
+    font-weight: 900; 
+    margin-top: 1em;
+  }
+  
+  .temp-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .temp-container .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 auto;
+  }
+  
+  .temp-container .temp {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 1em auto;
+  }
+  

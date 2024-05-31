@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&display=swap" rel="stylesheet">
+
+    <title>Quotes - Minimalistic Aesthethic Pomodoro Timer</title>
+</head>
+<body>
+    <script src="js/index.js" defer></script>
+    <script src="js/quote.js" defer></script> 
+    <script src="js/weather.js" defer></script>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Pomodoro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quote.html" class="nav-link">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="weather.html" class="nav-link">Weather</a>
+                </li>
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="quotes">
+            <p id="quote"></p>
+            <h4 id="author"></h4>
+            <div class="button-container-quote">
+                <button class="btn" id="prevBtn">⫷ Previous</button>
+                <button class="btn" id="nextBtn">Next ⫸</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
